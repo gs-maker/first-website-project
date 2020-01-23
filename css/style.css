@@ -1,0 +1,709 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 1rem;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body{
+    border: 0px;
+    font-size:0.875em;
+    font-family: 'Roboto', sans-serif;
+    margin: 0, auto;
+    line-height: 25px;
+    background-color:#f0f0f0;
+}
+
+/* -------------- Utility styles--------------- */
+h1, h2, h3, h4 h5{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 340;
+    margin: 0.75rem 0;
+} 
+
+.container {
+    max-width: 1080px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ------------------  Naviagtion styles -------------- */
+#showcase {
+    height: 90vh;
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5)), url('../images/download-15-1.png') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    color: #f0f0f0;
+    top: 0;
+    position: sticky;
+    z-index: 1;
+    height: 60px;
+    align-items: center;
+}
+
+#navbar ul{
+    display: flex;
+    align-items: center;
+}
+
+#navbar ul li a{
+    color: #f0f0f0;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+#navbar ul li a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+#navbar .logo img{
+    width: 70%;
+    height: auto;
+}
+
+#showcase .preamble{
+    padding-top: 215px;
+}
+
+#showcase .preamble h1{
+    font-size: 3.5em;
+    line-height: 3.2rem;
+    color:rgb(231, 231, 231);
+    padding-bottom: 10px;
+}
+
+#showcase .preamble p{
+    max-width: 600px;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: rgb(231, 231, 231);
+    padding-bottom: 40px;
+}
+
+#showcase button{
+    text-decoration:none;
+    height:50px;
+    width: 160px;
+    font-size: 1rem;
+    border:none;
+    border-radius: 5px;
+}
+
+#showcase .start-btn{
+    background-color: #f0f0f0;
+}
+
+#showcase .contact-btn{
+    background-color: rgb(0, 74, 186);
+    color:#f0f0f0;
+    margin-left: 10px;
+}
+
+/*------------------------PARTNERS STYLES STARTS HERE--------------------------*/
+#partners{
+    height:100px;
+    border-bottom: 1px solid #8e9ea1;
+    background-color:#f0f0f0;
+}
+
+#partners .logo-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top:40px;
+}
+
+/*------------------------MESSAGE FROM FOUNDER STYLES STARTS HERE--------------------------*/
+#message{
+    border-bottom: 1px solid #8e9ea1;
+}
+
+#message .container{
+    height: 500px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1px;
+}
+
+#message .image-intro{
+    height:300px;
+    flex: 1;
+}
+#message .image-intro img{
+    width: 540px;
+    height: auto;
+    border-radius: 5px;
+}
+#message .message-info{
+    padding-left:2rem;
+    flex: 1;
+}
+
+.message-info h2{
+    font-size:2.5rem;
+    line-height: 3rem;
+}
+
+.message-info p{
+    font-size:1rem;
+    color:grey;
+    padding-bottom: .5rem;
+}
+
+.message-info img{
+    width: 240px;
+    height: auto;
+}
+
+/*------------------------SERVICES CARDS STYLES START HERE--------------------------*/
+
+#services{
+    background-color: #f0f0f0;
+    height:780px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#services .services-intro h5{
+    font-size: 1.2rem;
+    color: grey;
+    font-weight: 200;
+}
+
+#services .services-intro p{
+    font-size: 2.2rem;
+    color: black;
+    line-height: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+.all-cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.all-cards .card-details{
+    flex-basis: 32%;
+    height: auto;
+    background-color: white;
+}
+
+.all-cards .card-details img{
+    width: 340px;
+    height: auto;
+}
+
+.card-details:hover{
+    transform: scale(1.05);
+    box-shadow: black;
+    transition: all .2s ease-in-out;
+}
+
+.card-title{
+    font-size:1.3rem;
+    padding-top:2rem;
+}
+
+.card-title:hover{
+    color:rgb(0, 74, 186);
+}
+
+.card-descr{
+    padding: 10px 20px;
+    line-height: 1.5rem;
+    color: grey;
+}
+.call-to-action{
+    padding:1.5rem 0 2rem 0;
+}
+
+.call-to-action a{
+    font-size:1rem;
+    color: rgb(51, 51, 51);
+}
+
+.call-to-action a:hover{
+    color:rgb(0, 74, 186);
+    text-decoration: underline;
+}
+
+/*------------------------POPULAR AGENTS STYLES START HERE--------------------------*/
+
+#agents{
+    height:600px;
+    background:linear-gradient(rgba(0,0,0,0.8), rgba(0, 0, 0, 0.8)), url('../images/xxx.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;   
+    align-items: center;
+    justify-content: space-between;
+}
+
+.agents-copy{
+    display: flex;
+    justify-content: space-between;
+    color:white;
+}
+
+#agents .breakdown img{
+    height: 45px;
+    width:auto;
+}
+
+#agents .agents-copy .intro h2{
+    font-size:2.2rem;
+    line-height: 2.6rem;
+}
+
+#agents .intro p{
+    color:rgb(167, 167, 167);
+    font-size:1rem;
+    padding:0 20px 20px 0;
+}
+
+#agents .agents-items .items{
+    display:flex;
+    justify-content: space-between;
+}
+
+#agents .agents-items .items p{
+    font-size: .8rem;
+    line-height: 1.2rem;
+    color: rgb(167, 167, 167);
+}
+
+#agents .agents-vid{
+    padding-left: 1rem;
+}
+#agents .agents-vid img{
+    width: 560px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/*------------------------CASE STUDIES STYLES START HERE--------------------------*/
+
+#caseStudies{
+    background-color:#f0f0f0;
+    height: 660px;
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.cases{
+    padding-top: 5rem;
+    width: 450px;
+    text-align:center;
+}
+.cases h3{
+    font-size: 1.2rem;
+    color:grey;
+}
+
+.cases p{
+    font-size: 2.5rem;
+    line-height: 2.7rem;
+}
+
+#caseStudies .case-items{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+#caseStudies .case-id{
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin: 10px 0 15px 0;
+    width: 330px;
+    height: auto;
+}
+
+.case-id img{
+    border-radius: 50%;
+    border: 1px solid rgb(184, 184, 184);
+}
+
+.case-id-details{
+    padding-left: 1rem;
+}
+
+.case-id h3{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.case-id p{
+    line-height: 1.2rem;
+    color: grey;
+}
+
+.case-id-details a:hover{
+    text-decoration: underline;
+}
+
+
+
+/*------------------------ACHIEVEMENTS STYLES START HERE--------------------------*/
+
+#achievements{
+    background-image: url('../images/m.jpg');
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+.achieve{
+    display:flex;
+    color: white;
+    padding-left: 40px;
+}
+
+.verticle{
+    width: 1px;
+    background-color: rgb(163, 163, 163);
+    height:600px;
+    margin-right: 20px;
+}
+.achieve-item {
+    padding-right: 20px;
+    padding-left: 30px;
+    flex-basis: 24%;
+    padding-top: 400px;
+}
+
+.achieve-item:hover{
+    padding-top:360px;
+    transition: all .2s ease-in-out;
+}
+
+.achieve-item h2{
+    font-size: 5rem;
+    padding-bottom: 30px;
+}
+
+.achieve-item h4{
+    font-size: 1.2em;
+}
+
+.achieve-item p{
+    color:rgb(163, 163, 163);
+    line-height: 1.5em;
+    padding-bottom: 20px;
+}
+
+.achieve-item a{
+    color: white;
+    visibility: hidden;
+}
+
+.achieve-item:hover > a{
+    visibility: visible;
+    text-decoration: underline;
+}
+
+
+/*------------------------TEAM MEMBER SECTION STYLES START HERE--------------------------*/
+
+#team{
+    background-color: #f0f0f0;
+    height:760px;
+    display:flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.team-intro{
+    padding-top:80px;
+    padding-bottom: 30px;
+}
+
+.team-intro p{
+    font-size: 2.7rem;
+}
+
+.team-intro h2{
+    font-size: 1.2rem;
+    color: grey;
+}
+
+.cards-team{
+    width: 1080px;
+    flex-grow:1;
+    display:flex;
+    justify-content: space-between;
+}
+
+.team-card-details{
+    background-color: white;
+    width: 256px;
+}
+
+.team-card-details:hover{
+    transform: scale(1.05);
+    box-shadow: black;
+    transition: all .2s ease-in-out;
+}
+
+.cards-team hr{
+    width: 256px;
+}
+
+.cards-team img{
+    width: 256px;
+}
+
+.team-details h3{
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding-top: 10px;
+}
+
+.team-details p{
+    color: grey;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.team-details ul{
+    color: grey;
+    font-size: 1em;
+}
+
+.team-details a{
+    list-style: none;
+    color: grey;
+}
+
+.team-details li{
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 200;
+    padding: 5px 3px;
+}
+
+.team-details li + li::before {
+    content: " | ";
+    padding: 3px 5px;
+}
+
+/*------------------------KEY STATS STYLES START HERE--------------------------*/
+
+#stats{
+    color: white;
+    background:linear-gradient(rgba(0,0,0,0.8), rgba(0, 0, 0, 0.8)), url('../images/ssss.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 520px;
+    display: flex;
+}
+
+.statistics{
+    display: flex;
+}
+
+.stats-intro{
+    margin-right: 20px;
+    flex: 1;
+}
+
+.stats-intro h3{
+    font-size:1.2rem;
+    color: rgb(156, 156, 156);
+}
+
+.stats-breakdown{
+    flex: 1;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stats-breakdown .stat{
+   border: 1px solid grey;
+   border-radius: 5px; 
+   display: flex;
+   flex-flow: column wrap;
+   align-items: center;
+   text-align: center;
+   width: 160px;
+   height: 120px;
+   color: grey;
+}
+
+.stat:hover{
+    color: white;
+}
+
+.stat h2{
+    font-size: 4rem;
+    padding-top: 2rem;
+    padding-bottom: .5rem;
+}
+
+.stats-intro h2{
+    font-size:2.5rem;
+    line-height: 2.8rem;
+}
+
+.stats-intro p{
+    font-size:1rem;
+    color: rgb(156, 156, 156);
+    padding-bottom: 2rem;
+}
+
+.quote-btn{
+    background-color:rgb(0, 74, 186);
+    border: none;
+    font-size: 1rem;
+    color:white;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+
+
+/*------------------------BLOG STYLES START HERE--------------------------*/
+
+#blog{
+    height: 600px;
+    background-color:#f0f0f0;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog-entries{
+    display: flex;
+}
+
+.blog-intro{
+    width: 400px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.blog-intro h3{
+    font-size: 1.2rem;
+    color: grey;
+}
+
+.blog-intro p{
+    font-size: 2.6rem;
+    line-height: 2.5rem;
+}
+
+.blog-post{
+    padding: 0 5px;
+}
+
+.blog-post img{
+    width: 260px;
+}
+
+.blog-post img:hover{
+    transform: scale(1.075);
+    transition: all .2s ease-in-out;
+}
+
+.blog-post p{
+    font-weight: 400;
+    line-height: 1.2rem;
+}
+
+.blog-post ul li{
+    list-style: none;
+    display: inline;
+    font-weight: 300;
+    color: rgb(153, 153, 153);
+}
+
+.details-auth + .details-date::before {
+    content: " | ";
+}
+
+/*------------------------FOOTER STYLES START HERE--------------------------*/
+
+#footerElements{
+    background-color: rgb(51, 51, 51);
+    color: white;
+    display: flex;
+    padding-top: 2rem;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.footerInputs{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.resources{
+    flex: 1;
+}
+.resources li{
+    list-style: none;
+    color: grey;
+}
+
+.products{
+    flex: 1;
+}
+.products li{
+    list-style: none;
+    color: grey;
+}
+.contact{
+    flex: 1;
+}
+hr{
+    width: 1080px;
+}
+
+.copyright a{
+    color:yellow;
+    text-decoration: underline;
+}
+/*------------------------END OF STYLES--------------------------*/
